@@ -5,7 +5,9 @@
 }
 
 html {
-	background: url(../assets/images/pattern-bg.png) repeat center center fixed; 
+	background: url(../assets/images/bg.png);
+	background-repeat: repeat; 
+	background-size: cover;
 }
 
 @import './responsive.css'
