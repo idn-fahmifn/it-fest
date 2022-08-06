@@ -4,4 +4,8 @@
 	box-sizing: border-box;
 }
 
+html {
+	background: url(../assets/images/pattern-bg.png) repeat center center fixed; 
+}
+
 @import './responsive.css'
