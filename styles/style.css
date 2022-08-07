@@ -47,6 +47,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: white;
 }
 
 .navbar .navbar__brand {
@@ -80,6 +81,7 @@ body {
 /* ABOUT */
 
 .about {
+	margin-top: 473px;
 	height: 100vh;
 	padding-bottom: 200px;
 }
@@ -143,12 +145,13 @@ body {
 	text-align: center;
 }
 
-.event img {
-	width: 91px;
+
+.event .scroll__el {
+	width: 5vw;
 	height: auto;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: -20px auto 0;
+	animation: scrollDown 1s ease-in infinite;
 }
 
 .card {
