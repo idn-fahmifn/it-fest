@@ -87,13 +87,13 @@ body {
 	margin-top: 6px;
 }
 
-.header__jumbotron {
+.header__hero {
 	width: 100%;
 	height: 100%;
 	position: relative;
 }
 
-.header__jumbotron .header__el-1 {
+.header__hero .header__el-1 {
 	width: 380px;
 	height: auto;
 	position: absolute;
@@ -102,7 +102,7 @@ body {
 	z-index: -1;
 }
 
-.header__jumbotron .logo-background-center {
+.header__hero .logo-background-center {
 	width: 55vw;
 	max-width: 1000px;
 	height: auto;
@@ -113,7 +113,7 @@ body {
 	/* filter: drop-shadow(20px 20px 0px #000000); */
 }
 
-.header__jumbotron .header__el-2 {
+.header__hero .header__el-2 {
 	width: 380px;
 	height: auto;
 	position: absolute;
