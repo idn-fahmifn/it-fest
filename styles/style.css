@@ -40,7 +40,9 @@ body {
 /** Navbar */
 
 .navbar {
-	margin-top: 36px;
+	width: 100%;
+	height: 100px;
+	margin-top: 16px;
 	padding: 10px;
 	display: flex;
 	justify-content: space-between;
@@ -53,7 +55,8 @@ body {
 }
 
 .navbar .navbar__list {
-	width: 40%;
+	width: 40vw;
+	min-width: 430px;
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -73,9 +76,6 @@ body {
 	padding: 12px 33px;
 	border-radius: 10px;
 }
-
-@import './responsive.css';
-
 
 /* ABOUT */
 
@@ -234,3 +234,59 @@ body {
 	margin-top: 117.93px;
 	margin-bottom: 104px;
 }
+
+/** Header **/
+.header {
+	width: 100%;
+	height: calc(100vh - 200px);
+	max-height: 830px;
+	max-width: 1865px;
+	position: relative;
+	margin-top: 6px;
+}
+
+.header__hero {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.header__hero .header__el-1 {
+	width: 380px;
+	height: auto;
+	position: absolute;
+	top: -10px;
+	left: 2vw;
+	z-index: -1;
+}
+
+.header__hero .logo-background-center {
+	width: 55vw;
+	max-width: 1000px;
+	height: auto;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* filter: drop-shadow(20px 20px 0px #000000); */
+}
+
+.header__hero .header__el-2 {
+	width: 380px;
+	height: auto;
+	position: absolute;
+  right: 1px;
+  bottom: 0%;
+	z-index: -1;
+}
+
+.header .scroll__el {
+	width: 90px;
+	height: 90px;
+	display: block;
+	margin: -20px auto 0;
+}
+
+
+
+@import './responsive.css'
