@@ -24,7 +24,7 @@ html::after {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;  
+  z-index: -99999;  
 }
 
 body {
@@ -74,4 +74,50 @@ body {
 	border-radius: 10px;
 }
 
-@import './responsive.css'
+@import './responsive.css';
+
+
+/* ABOUT */
+
+.about img {
+	position: absolute;
+	width: 80vw;
+	display: block;
+	margin-left: 1.4vw;
+	margin-right: auto;
+	filter: drop-shadow(15px 15px 0px black);
+}
+
+.about img:nth-child(2) {
+	width: 30vw;
+	z-index: -1;
+	height: auto;
+	margin-top: 34vw;
+	left: -1.4vw;
+	filter: none;
+}
+
+.about .container {
+	width: 51vw;
+	position: absolute;
+	margin-top: 171px;
+}
+
+.about .container h1 {
+	font-size: 40.99px;
+	margin-bottom: 37.33px;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+}
+
+.about .container_head {
+	margin-bottom: 20.26px;
+}
+
+.about .container p {
+	text-align: justify;
+	line-height: 22.87px;
+	font-weight: 400;
+	letter-spacing: 0.015rem;
+	font-size: 17.57px;
+}
