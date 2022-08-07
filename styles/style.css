@@ -31,6 +31,7 @@ body {
 	font-family: "Golden Age";
 }
 
+
 .container {
 	padding: 0 100px;
 	max-width: 2200px;
@@ -94,7 +95,7 @@ body {
 }
 
 .header__hero .header__el-1 {
-	width: 380px;
+	width: 30vw;
 	height: auto;
 	position: absolute;
 	top: -10px;
@@ -114,7 +115,7 @@ body {
 }
 
 .header__hero .header__el-2 {
-	width: 380px;
+	width: 30vw;
 	height: auto;
 	position: absolute;
   right: 1px;
@@ -123,12 +124,10 @@ body {
 }
 
 .header .scroll__el {
-	width: 90px;
-	height: 90px;
+	width: 5vw;
+	height: auto;
 	display: block;
 	margin: -20px auto 0;
 }
 
-
-
-@import './responsive.css'
+@import './responsive.css';
