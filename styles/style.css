@@ -13,6 +13,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 html::after {
 	content: "";
 	background: url(../assets/images/bg.png);
@@ -92,35 +96,13 @@ body {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	display: grid;
+	place-items: center;
 }
 
-.header__hero .header__el-1 {
-	width: 30vw;
+.header__hero .hero-content {
+	width: 80%;
 	height: auto;
-	position: absolute;
-	top: -10px;
-	left: 2vw;
-	z-index: -1;
-}
-
-.header__hero .logo-background-center {
-	width: 55vw;
-	max-width: 1000px;
-	height: auto;
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	/* filter: drop-shadow(20px 20px 0px #000000); */
-}
-
-.header__hero .header__el-2 {
-	width: 30vw;
-	height: auto;
-	position: absolute;
-  right: 1px;
-  bottom: 0%;
-	z-index: -1;
 }
 
 .header .scroll__el {
@@ -128,6 +110,24 @@ body {
 	height: auto;
 	display: block;
 	margin: -20px auto 0;
+	animation: scrollDown 1s ease-in infinite;
+}
+
+@keyframes scrollDown {
+ from {
+	 transform: translateY(-10px);
+ }
+ to {
+	 transform: translateY(10px);
+ }
+}
+
+/** Section Theme **/
+
+.theme {
+	width: 100%;
+	height: 100vh;
+	margin-top: 100px
 }
 
 @import './responsive.css';
