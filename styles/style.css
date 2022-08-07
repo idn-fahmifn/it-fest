@@ -120,9 +120,50 @@ body {
 /** Section Theme **/
 
 .theme {
+	width: 90%;
+	height: 120vh;
+	position: relative;
+	margin: 140px auto 0;
+}
+
+.theme .theme__el-1 {
+	position: absolute;
+	width: 18%;
+	height: auto;
+	top: 40px;
+	left: -90px;
+	z-index: -1;
+}
+
+.theme .theme__el-2 {
+	position: absolute;
+	width: 20%;
+	height: auto;
+	bottom: 55px;
+	right: -165px;
+	z-index: -1;
+}
+
+.theme .theme-container {
 	width: 100%;
-	height: 100vh;
-	margin-top: 100px
+	height: 100%;
+}
+
+.theme-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain
+}
+
+.theme-container .theme__text {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 400;
+	width: 80%
 }
 
 @import './responsive.css';
