@@ -599,6 +599,15 @@ body {
 	z-index: -20;
 }
 
+.activity .activity__el-2 {
+	position: absolute;
+	width: 350px;
+	height: auto;
+	bottom: -10px;
+	left: -100px;
+	z-index: -20;
+}
+
 .activity .activity__list {
 	width: 90vw;
 	margin-right: 100px;
