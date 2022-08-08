@@ -8,33 +8,30 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <title>ITFEST2022</title>
-   
-
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <nav class="navbar">
-                <img src="./assets/icon/logo.png" alt="logo it-fest" class="navbar__brand">
-                <div class="navbar__list">
-                    <a href="#about" class="navbar__item">About</a>
-                    <a href="#event" class="navbar__item">Event</a>
-                    <a href="#timeline" class="navbar__item">Timeline</a>
-                    <a href="#contact" class="navbar__item">Contact</a>
-                    <a href="#register" class="navbar__item item__rounded">Register</a>
-                </div>
-            </nav>
-
-            <div class="header">
-                <div class="header__hero">
-                    <img src="./assets/icon/hero-content.png" class="hero-content" alt="">
-                </div>
-                <img src="./assets/icon/scroll-button.png" class="scroll__el" alt="">
+        <nav class="navbar">
+            <img src="./assets/icon/logo.png" alt="logo it-fest" class="navbar__brand">
+            <div class="navbar__list">
+                <a href="#about" class="navbar__item">About</a>
+                <a href="#event" class="navbar__item">Event</a>
+                <a href="#timeline" class="navbar__item">Timeline</a>
+                <a href="#contact" class="navbar__item">Contact</a>
+                <a href="#register" class="navbar__item item__rounded">Register</a>
             </div>
+        </nav>
+
+        <div class="header">
+            <div class="header__hero">
+                <img src="./assets/icon/hero-content.png" class="hero-content" alt
+            </div>
+            <img src="./assets/icon/scroll-button.png" class="scroll__el" alt="">
+        </div>
         </header>
         <main class="main-content">
-            <section class="theme">
+            <section class="theme" id="theme">
                 <img src="./assets/icon/circle-ball.png" alt="" class="theme__el-1">
                 <div class="theme-container">
                     <img src="./assets/icon/theme-bg.png" alt="">
@@ -43,7 +40,7 @@
                 <img src="./assets/icon/half-cirlcle-horizontal.png" alt="" class="theme__el-2">
                 <div class="theme-scroll">
                     <p class="scroll__text">Keep scrolling!</p>
-                    <img src="./assets/icon/scroll-button.png" class="scroll__el" alt="">
+                    <a href="#about"><img src="./assets/icon/scroll-button.png" class="scroll__el" alt=""></a>
                 </div>
                 <div class="theme__doors">
                     <img src="./assets/icon/Pintu masuk.png" alt="" class="theme__el-3">
@@ -61,35 +58,26 @@
                         Through Technological Innovation”. Kegiatan ini dilakuan secara online dan offline
                 </div>
                 <img src="./assets/images/bg_ellipse.png" class="about__el-1" />
-
             </section>
-    
-            <section class="event" id="event">
-                <div class="event__container">
-                    <h1>THE COMPETITION IS....</h1>
-                    <img class="scroll__el" src="./assets/images/arrow.png">
-                    <div class="event__cards">
-                        <div class="card__item">
-                            <img src="./assets/icon/icon_laptop.png">
-                            <div class="item__content">
-                                <h1>Web Development</h1>
-                                <div class="btn_event"><a href="#">DETAILS</a></div>
-                            </div>
-                        </div>
-                        <div class="card__item">
-                            <img src="./assets/icon/icon_hp.png">
-                            <div class="item__content">
-                                <h1>UI/UX DESIGN</h1>
-                                <div class="btn_event"><a href="#">DETAILS</a></div>
-                            </div>
-                        </div>
-                        <div class="card__item">
-                            <img src="./assets/icon/icon_server.png">
-                            <div class="item__content">
-                                <h1>NETWORKING</h1>
-                                <div class="btn_event"><a href="#">DETAILS</a></div>
-                            </div>
-                        </div>
+        <section class="event" id="event">
+            <div class="container">
+                <h1>THE COMPETITION IS....</h1>
+                <a href="#event"><img src="./assets/images/arrow.png" class="scroll__el"></a>
+                <div class="card">
+                    <div class="item">
+                        <img src="./assets/icon/icon_laptop.png">
+                        <h1>Web <br> Development</h1>
+                        <div class="btn_event"><a href="#">DETAILS</a></div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/icon/icon_hp.png">
+                        <h1>UI/UX <br> DESIGN</h1>
+                        <div class="btn_event"><a href="#">DETAILS</a></div>
+                    </div>
+                    <div class="item">
+                        <img src="./assets/icon/icon_server.png">
+                        <h1>NETWORKING</h1>
+                        <div class="btn_event"><a href="#">DETAILS</a></div>
                     </div>
                 </div>
             </section>
