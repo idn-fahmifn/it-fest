@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 @font-face {
 	font-family: 'Golden Age';
 	src: url(../assets/font/Golden\ Age.ttf);
@@ -47,7 +49,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: white;
 }
 
 .navbar .navbar__brand {
@@ -378,3 +379,119 @@ body {
 }
 
 @import './responsive.css';
+
+/* SPONSOR */
+
+.partner {
+	height: 100vh;
+}
+
+.partner h1{
+	font-weight: 400;
+	font-size: 3.5rem;
+	line-height: 63.95px;
+	text-align: center;
+	margin-top: 86px;
+	text-align: center;
+}
+
+.partner h2{
+	font-size: 1.4rem;
+	line-height: 114.2%;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+}
+
+.partner .container {
+	text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+	width: 100%;
+	height: 50vh;
+	background-color: #e2e2e2;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer .footer-item {
+	width: 30%;
+	height: 100%;
+}
+
+#footer1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer1 .footer-content {
+	width: 90%;
+	height: 30%;
+}
+
+#content1 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#content1 img {
+	width: 60%;
+}
+
+#content2 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	letter-spacing: 0.005em;
+	text-align: justify;
+}
+
+#footer2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+}
+
+#footer2 ul{
+	list-style: none;
+	margin-top: 60px;
+}
+
+#footer2 ul li {
+	display: flex;
+	/* border: 1px solid black; */
+	margin-top: 26px;
+}
+
+#title-contact {
+	font-weight: 600;
+	font-size: 1.5rem;
+	margin-bottom: 40px;
+}
+
+.footer-item img {
+	margin-right: 17px;
+}
+
+#footer3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+}
+
+#footer3 ul{
+	list-style: none;
+}
+
+#footer3 li {
+	font-size: 1.5rem;
+	margin-top: 86px;
+}
