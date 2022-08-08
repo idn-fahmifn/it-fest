@@ -29,6 +29,7 @@ html::after {
 
 body {
 	font-family: "Golden Age";
+	overflow-x: hidden;
 }
 
 .container {
@@ -280,6 +281,7 @@ body {
 	width: 100%;
 	height: 100vh;
 	text-align: center;
+	margin-bottom: 300px;
 }
 
 .event h1 {
@@ -344,7 +346,6 @@ body {
 
 .card__item .item__content {
 	width: 100%;
-	height: 100px;
 	position: absolute;
 	bottom: 150px;
 	left: 50%;
@@ -386,7 +387,7 @@ body {
 }
 
 .card__item:nth-child(1) img {
-	width: 180px;
+	width: 13vw;
 	height: auto;
 	position: absolute;
 	top: 30%;
@@ -395,7 +396,7 @@ body {
 }
 
 .card__item:nth-child(2) img {
-	width: 80px;
+	width: 8vw;
 	height: auto;
 	position: absolute;
 	top: 30%;
@@ -404,12 +405,106 @@ body {
 }
 
 .card__item:nth-child(3) img {
-	width: 120px;
+	width: 9vw;
 	height: auto;
 	position: absolute;
 	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+/** Activity Section **/
+
+.activity {
+	width: 100%;
+	height: 110vh;
+	position: relative;
+}
+
+.activity .activity__heading {
+	font-weight: 400;
+	font-size: 2rem;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.activity .activity__el-1 {
+	position: absolute;
+	width: 300px;
+	height: auto;
+	top: -50px;
+	right: 50px;
+	z-index: -20;
+}
+
+.activity .activity__list {
+	width: 90vw;
+	margin-right: 100px;
+	overflow-x: scroll;
+	display: grid;
+	grid-gap: 16px;
+	padding: 16px;
+	grid-template-columns: repeat(auto-fill,minmax(600px,1fr));
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(600px,1fr);
+	overflow-x: auto;
+}
+
+.activity__list::-webkit-scrollbar {
+	display: none;
+}
+
+.activity__list .activity__item {
+	/* width: 700px;
+	height: 460px; */
+	padding: 30px 40px;
+	margin-right: 10px;
+	background-image: url(../assets/icon/activity-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+.activity__item .item__heading {
+	font-size: 2.5rem;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.activity__item .item__content {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 200px 1fr;
+	grid-row-gap: 20px;
+}
+
+.item__content .content__polygon {
+	width: 70%;
+	height: auto;
+	align-self: center;
+	justify-self: center;
+	
+}
+
+.item__content .content__title {
+	font-size: 2rem;
+	text-align: left;
+	justify-self: center;
+	line-height: 1.3;
+	display: flex;
+	align-items: center;
+}
+
+.item__content .btn-activity {
+	padding: 15px 20px;
+	background: #FFFFFF;
+	border: 3px solid #000000;
+	border-radius: 20px;
+	font-family: "Golden Age";
+	font-size: 1.4rem;
+	grid-column: 2 / -1;
 }
 
 @import './responsive.css';
