@@ -144,6 +144,7 @@ body {
 	text-align: center;
 	margin-top: 3vw;
 	text-align: center;
+	animation: scrollDown 1s ease-in infinite;
 }
 
 
@@ -152,6 +153,7 @@ body {
 	height: auto;
 	display: block;
 	margin: -20px auto 0;
+	margin-top: 10px;
 	animation: scrollDown 1s ease-in infinite;
 }
 
@@ -176,6 +178,7 @@ body {
 
 .card .item h1{
 	font-size: 2.5rem;
+	animation: none;
 }
 
 .item a {
@@ -369,6 +372,7 @@ body {
 	font-weight: 400;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	animation: scrollDown 1s ease-in infinite;
 }
 
 .theme-scroll .scroll__el {
@@ -411,7 +415,7 @@ body {
 .footer {
 	width: 100%;
 	height: 50vh;
-	background-color: #e2e2e2;
+	background-color: #D8D8D8;
 	display: flex;
 	justify-content: space-between;
 	font-family: 'Poppins', sans-serif;
@@ -455,25 +459,32 @@ body {
 #footer2 {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: center;
 	align-items: flex-start;
+	padding-top: 30px;
 }
 
 #footer2 ul{
 	list-style: none;
-	margin-top: 60px;
 }
 
 #footer2 ul li {
 	display: flex;
 	/* border: 1px solid black; */
 	margin-top: 26px;
+	align-items: center;
+}
+
+#footer2 ul li p{
+	letter-spacing: 0.005em;
+	font-size: 1.5rem;
+	font-weight: 500;
 }
 
 #title-contact {
 	font-weight: 600;
 	font-size: 1.5rem;
-	margin-bottom: 40px;
+	margin: 0 0 40px 0;
 }
 
 .footer-item img {
@@ -494,4 +505,20 @@ body {
 #footer3 li {
 	font-size: 1.5rem;
 	margin-top: 86px;
+}
+
+#footer3 li:nth-child(2) {
+	margin-top: -15px;
+}
+
+.marker {
+	display: flex;
+	justify-content: center;
+	background-color: #D8D8D8;
+	padding-top: 138px;
+}
+
+.marker p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
 }
