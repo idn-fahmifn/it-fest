@@ -774,6 +774,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	font-family: 'Poppins', sans-serif;
+	padding: 0 100px;
 }
 
 .footer .footer-item {
@@ -870,7 +871,7 @@ body {
 	display: flex;
 	justify-content: center;
 	background-color: #D8D8D8;
-	padding-top: 138px;
+	padding: 138px 20px 20px;
 }
 
 .marker p{
