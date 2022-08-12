@@ -171,14 +171,12 @@ body {
 
 .schedule .header-timeline {
     font-size: 2.5rem;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     padding: 30px 0px;
 }
 
 .schedule .schedule-timeline {
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
