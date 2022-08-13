@@ -43,6 +43,10 @@ body {
 
 /** Navbar */
 
+header {
+	min-height: 670px;
+}
+
 .navbar {
 	width: 100%;
 	height: 100px;
@@ -125,7 +129,7 @@ body {
 
 .theme {
 	width: 90%;
-	height: 120vh;
+	height: 1000px;
 	position: relative;
 	margin: 140px auto 0;
 }
@@ -223,7 +227,7 @@ body {
 
 .about {
 	margin-top: 400px;
-	height: 100vh;
+	height: 900px;
 	width: 100%;
 	position: relative;
 }
@@ -335,7 +339,7 @@ body {
 
 .event {
 	width: 100%;
-	height: 100vh;
+	height: 675px;
 	text-align: center;
 	margin-bottom: 300px;
 }
@@ -472,7 +476,7 @@ body {
 
 .activity {
 	width: 100%;
-	height: 110vh;
+	height: 800px;
 	position: relative;
 	margin-bottom: 100px;
 }
@@ -576,7 +580,7 @@ body {
 
 .timeline {
 	width: 100%;
-	height: 110vh;
+	height: 1000px;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -632,7 +636,7 @@ body {
 /* SPONSOR */
 
 .partner {
-	height: 100vh;
+	height: 500px;
 }
 
 .partner h1{
@@ -659,7 +663,7 @@ body {
 
 .footer {
 	width: 100%;
-	height: 50vh;
+	height: 400px;
 	background-color: #D8D8D8;
 	display: flex;
 	justify-content: space-between;
