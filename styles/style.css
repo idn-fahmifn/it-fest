@@ -36,8 +36,8 @@ body {
 }
 
 .container {
-	padding: 0 100px;
-	max-width: 2200px;
+	/* padding: 0 100px; */
+	max-width: 1500px;
 	margin: 0 auto;
 }
 
@@ -218,7 +218,7 @@ header {
 }
 
 .theme-scroll .scroll__el {
-	width: 5vw;
+	width: 70px;
 	height: auto;
 	display: block;
 }
@@ -226,7 +226,7 @@ header {
 /** ABOUT **/
 
 .about {
-	margin-top: 400px;
+	margin-top: 500px;
 	height: 700px;
 	width: 100%;
 	position: relative;
@@ -376,6 +376,7 @@ header {
 	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 30px;
 	align-items: center;
+	justify-items: center;
 	margin-top: 100px;
 }
 
@@ -384,6 +385,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: contain;
 	width: 100%;
+	max-width: 410px;
 	height: 550px;
 	display: flex;
 	flex-direction: column;
@@ -410,7 +412,8 @@ header {
 	margin-bottom: 100px;
 }
 
-.card__item img:first-child {
+.card__item:first-child img,
+.card__item:last-child img {
 	width: 150px;
 }
 
@@ -459,33 +462,6 @@ header {
 	color: white;
 }
 
-/* .card__item:nth-child(1) img {
-	width: 13vw;
-	height: auto;
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.card__item:nth-child(2) img {
-	width: 8vw;
-	height: auto;
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.card__item:nth-child(3) img {
-	width: 9vw;
-	height: auto;
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-} */
-
 /** Activity Section **/
 
 .activity {
@@ -522,20 +498,15 @@ header {
 }
 
 .activity .activity__list {
-	width: 90vw;
+	width: 100%;
 	margin-right: 100px;
-	overflow-x: scroll;
 	display: grid;
 	grid-gap: 16px;
-	padding: 16px;
+	padding: 16px 6vw;
 	grid-template-columns: repeat(auto-fill,minmax(600px,1fr));
 	grid-auto-flow: column;
 	grid-auto-columns: minmax(600px,1fr);
 	overflow-x: auto;
-}
-
-.activity__list::-webkit-scrollbar {
-	display: none;
 }
 
 .activity__list .activity__item {
@@ -714,7 +685,7 @@ header {
 }
 
 #content2 {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 500;
 	letter-spacing: 0.005em;
 	text-align: justify;
@@ -741,14 +712,19 @@ header {
 
 #footer2 ul li p{
 	letter-spacing: 0.005em;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 500;
+}
+
+#footer2 ul li img {
+	width: 20px;
+	height: auto;
 }
 
 #title-contact {
 	font-weight: 600;
 	font-size: 1.5rem;
-	margin: 0 0 40px 0;
+	margin-top: 86px;
 }
 
 .footer-item img {
@@ -767,12 +743,17 @@ header {
 }
 
 #footer3 li {
+	font-size: 1rem;
+}
+
+#footer3 #title-contact {
+	font-weight: 600;
 	font-size: 1.5rem;
 	margin-top: 86px;
 }
 
 #footer3 li:nth-child(2) {
-	margin-top: -15px;
+	margin-top: 15px;
 }
 
 .marker {
@@ -786,5 +767,3 @@ header {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.5rem;
 }
-
-@import './responsive.css';
