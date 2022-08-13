@@ -43,6 +43,10 @@ body {
 
 /** Navbar */
 
+header {
+	min-height: 670px;
+}
+
 .navbar {
 	width: 100%;
 	height: 100px;
@@ -79,173 +83,6 @@ body {
 	border: 1px solid #000;
 	padding: 12px 33px;
 	border-radius: 10px;
-}
-
-/* ABOUT */
-
-.about {
-	margin-top: 473px;
-	height: 100vh;
-	padding-bottom: 200px;
-}
-
-.about img {
-	position: absolute;
-	width: 80vw;
-	display: block;
-	margin-left: 1.4vw;
-	margin-right: auto;
-	filter: drop-shadow(15px 15px 0px black);
-}
-
-.about img:nth-child(2) {
-	width: 30vw;
-	z-index: -1;
-	height: auto;
-	margin-top: 34vw;
-	left: -1.4vw;
-	filter: none;
-}
-
-.about .container {
-	width: 51vw;
-	position: absolute;
-	margin-top: 171px;
-}
-
-.about .container h1 {
-	font-size: 2.2rem;
-	margin-bottom: 37.33px;
-	letter-spacing: 0.05em;
-	font-weight: 400;
-}
-
-.about .container_head {
-	margin-bottom: 20.26px;
-}
-
-.about .container p {
-	text-align: justify;
-	line-height: 22.87px;
-	font-weight: 400;
-	letter-spacing: 0.015rem;
-	font-size: 1rem;
-}
-
-/* EVENT */
-
-.event {
-	height: 100vh;
-	text-align: center;
-}
-
-.event h2 {
-	font-weight: 400;
-	font-size: 2.2rem;
-	line-height: 114.2%;
-	text-align: center;
-	margin-top: 3vw;
-	text-align: center;
-}
-
-.event .event__section {
-	animation: scrollDown 1s ease-in infinite;
-
-}
-
-
-.event .scroll__el {
-	width: 5vw;
-	height: auto;
-	display: block;
-	margin: -20px auto 0;
-	margin-top: 10px;
-}
-
-.card {
-	max-width: min-content;
-	margin-left: -12.5vw;
-	display: flex;
-	/* overflow-x: auto; */
-	margin-top: 100px;
-	text-align: center;
-}
-
-.card .item {
-	background: url(../assets/images/bg_card.png);
-	background-size: cover;
-	min-width: 462.54px;
-	height: 621px;
-	margin-right: 19px;
-	margin-left: 19px;
-	text-align: center;
-	position: relative;
-}
-
-.card .item h1{
-	font-size: 2.5rem;
-	animation: none;
-}
-
-.item a {
-	text-decoration: none;
-	color: black;
-	font-size: 1.6rem;
-}
-
-.item .btn_event {
-	background-color: white;
-	width: 349px;
-	height: 56px;
-	position: absolute;
-	margin-top: 27px;
-	left: 50%;
-	transform: translateX(-50%);
-	border-radius: 20px;
-	border: 3px solid #000000;
-	display: grid;
-	place-items: center;
-}
-
-.item:nth-child(3) .btn_event {
-	margin-top: 50px;
-}
-
-.item:nth-child(1) .btn_event:hover {
-	background-color: black;
-}
-
-.item:nth-child(2) .btn_event:hover {
-	background-color: #FCA5FA;
-}
-
-.item:nth-child(3) .btn_event:hover {
-	background-color: #00DC72;
-}
-
-.item .btn_event:hover a {
-	color: white;
-}
-
-.item:nth-child(1) img {
-	width: 227.52px;
-	height: auto;
-	margin-top: 92px;
-	margin-bottom: 83px;
-}
-
-.item:nth-child(2) img {
-	width: 102px;
-	height: auto;
-	margin-top: 154px;
-	margin-bottom: 70px;
-}
-
-.item:nth-child(3) img {
-	width: 161.72px;
-	height: auto;
-	margin-top: 117.93px;
-	margin-bottom: 104px;
 }
 
 /** Header **/
@@ -292,7 +129,7 @@ body {
 
 .theme {
 	width: 90%;
-	height: 120vh;
+	height: 1000px;
 	position: relative;
 	margin: 140px auto 0;
 }
@@ -390,7 +227,7 @@ body {
 
 .about {
 	margin-top: 400px;
-	height: 100vh;
+	height: 700px;
 	width: 100%;
 	position: relative;
 }
@@ -416,27 +253,35 @@ body {
 }
 
 .about .about__container {
-	width: 40%;
+	width: 65%;
 	position: absolute;
-	top: 30%;
-	left: 35%;
+	margin-top: 225px;
+	left: 50%;
 	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.about__container .about__heading {
+.about__info {
+	width: 50%;
+}
+
+.about__info .info__heading {
 	font-size: 2.2rem;
-	margin-bottom: 37.33px;
+	margin-bottom: 20px;
 	letter-spacing: 0.05em;
 	font-weight: 400;
 }
 
-.about .about__title {
+.about__info .info__title {
 	font-size: 1.5rem;
 	font-weight: 400;
 	margin-bottom: 20px;
 }
 
-.about__container p {
+
+.about__info p {
 	text-align: justify;
 	line-height: 22.87px;
 	font-weight: 400;
@@ -444,25 +289,75 @@ body {
 	font-size: 1rem;
 }
 
+.about__slideshow {
+	width: 50%;
+	margin-left: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.slideshow__btn {
+	width: 35px;
+	height: 35px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.slideshow__btn img {
+	width: 100%;
+	height: 100%;
+}
+
+.slideshow__images {
+	width: 75%;
+	height: 250px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow__images .slideshow__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 1;
+	animation: displayImage .3s ease;
+}
+
+@keyframes displayImage {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 /** EVENT **/
 
 .event {
 	width: 100%;
-	height: 100vh;
+	height: 675px;
 	text-align: center;
 	margin-bottom: 300px;
 }
 
-.event h1 {
+.event__section {
+	animation: scrollDown 1s ease-in infinite;
+}
+
+.event__section h2 {
 	font-weight: 400;
-	font-size: 2.2rem;
+	font-size: 2rem;
 	line-height: 114.2%;
 	text-align: center;
 	margin-top: 3vw;
 	text-align: center;
 }
 
-.event .scroll__el {
+.event__section .scroll__el {
 	width: 91px;
 	height: auto;
 	display: block;
@@ -585,7 +480,7 @@ body {
 
 .activity {
 	width: 100%;
-	height: 110vh;
+	height: 800px;
 	position: relative;
 	margin-bottom: 100px;
 }
@@ -689,7 +584,7 @@ body {
 
 .timeline {
 	width: 100%;
-	height: 110vh;
+	height: 1000px;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -710,6 +605,7 @@ body {
 	position: absolute;
 	top: -200px;
 	right: -110px;
+	z-index: -1;
 }
 
 .timeline .content__image {
@@ -727,6 +623,8 @@ body {
 	position: absolute;
 	bottom: 30%;
 	left: -50px;
+	z-index: -1;
+
 }
 
 .timeline .timeline__el-3 {
@@ -735,14 +633,14 @@ body {
 	position: absolute;
 	bottom: -200px;
 	right: -80px;
-}
+	z-index: -1;
 
-@import './responsive.css';
+}
 
 /* SPONSOR */
 
 .partner {
-	height: 100vh;
+	height: 500px;
 }
 
 .partner h1{
@@ -769,7 +667,7 @@ body {
 
 .footer {
 	width: 100%;
-	height: 50vh;
+	height: 400px;
 	background-color: #D8D8D8;
 	display: flex;
 	justify-content: space-between;
@@ -878,3 +776,5 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.5rem;
 }
+
+@import './responsive.css';
