@@ -298,6 +298,7 @@ body {
 	height: 35px;
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 }
 
 .slideshow__btn img {
@@ -311,13 +312,23 @@ body {
 	display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .slideshow__images .slideshow__image {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	opacity: 1;
+	animation: displayImage .3s ease;
+}
+
+@keyframes displayImage {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 /** EVENT **/
@@ -586,6 +597,7 @@ body {
 	position: absolute;
 	top: -200px;
 	right: -110px;
+	z-index: -1;
 }
 
 .timeline .content__image {
@@ -603,6 +615,8 @@ body {
 	position: absolute;
 	bottom: 30%;
 	left: -50px;
+	z-index: -1;
+
 }
 
 .timeline .timeline__el-3 {
@@ -611,9 +625,9 @@ body {
 	position: absolute;
 	bottom: -200px;
 	right: -80px;
-}
+	z-index: -1;
 
-@import './responsive.css';
+}
 
 /* SPONSOR */
 
@@ -754,3 +768,5 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.5rem;
 }
+
+@import './responsive.css';
