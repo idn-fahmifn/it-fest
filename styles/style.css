@@ -227,7 +227,7 @@ header {
 
 .about {
 	margin-top: 400px;
-	height: 900px;
+	height: 700px;
 	width: 100%;
 	position: relative;
 }
@@ -344,16 +344,20 @@ header {
 	margin-bottom: 300px;
 }
 
-.event h1 {
+.event__section {
+	animation: scrollDown 1s ease-in infinite;
+}
+
+.event__section h2 {
 	font-weight: 400;
-	font-size: 2.2rem;
+	font-size: 2rem;
 	line-height: 114.2%;
 	text-align: center;
 	margin-top: 3vw;
 	text-align: center;
 }
 
-.event .scroll__el {
+.event__section .scroll__el {
 	width: 91px;
 	height: auto;
 	display: block;
