@@ -445,7 +445,7 @@ header {
 	background-color: #00DC72;
 }
 
-.card__item .btn_event:hover a {
+.card__item .btn_event:hover p {
 	color: white;
 }
 
