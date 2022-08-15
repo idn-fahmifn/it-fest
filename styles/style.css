@@ -653,6 +653,18 @@ header {
 
 .partner .container {
 	text-align: center;
+	margin-bottom: 40px;
+}
+
+.partner__item {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.partner__img {
+	width: 276px;
+	height: auto;
 }
 
 /* FOOTER */
