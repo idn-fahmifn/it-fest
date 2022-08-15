@@ -83,6 +83,7 @@ body {
 .header {
     display: flex;
     flex-direction: row;
+	width: 100%;
 }
 
 .header div:nth-child(1) {
@@ -93,7 +94,7 @@ body {
 }
 
 .header div:nth-child(1) img {
-    width: 40%;
+    width: 60%;
     height: auto;
 }
 
@@ -107,6 +108,7 @@ body {
 .header div:nth-child(2) p {
     font-size: 6rem;
 }
+
 .header div:nth-child(2) li{
     list-style: none;
     border: 3px solid black;
@@ -123,11 +125,6 @@ body {
 
 .header div:nth-child(2) .daftar {
     width: 100%;
-}
-
-.header img {
-    width: 20.5vw;
-    height: auto;
 }
 
 .text {
@@ -211,17 +208,41 @@ body {
 	z-index: -1;
 }
 
+/* PARTNER */
+.partner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.partner h1 {
+	font-size: 3.5rem;
+	font-weight: 400;
+}
+
+.partner p {
+	padding-top: 19px;
+	font-size: 1.3rem;
+}
+
+.partner img {
+	width: 276px;
+	height: 276px;
+	margin-top: 48px;
+	margin-bottom: 179px;
+}
+
 /* FOOTER */
 
 .footer {
 	width: 100%;
-	height: 50vh;
+	height: 400px;
 	background-color: #D8D8D8;
 	display: flex;
 	justify-content: space-between;
 	font-family: 'Poppins', sans-serif;
 	padding: 0 100px;
-    margin-top: 500px;
 }
 
 .footer .footer-item {
@@ -253,7 +274,7 @@ body {
 }
 
 #content2 {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 500;
 	letter-spacing: 0.005em;
 	text-align: justify;
@@ -263,7 +284,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	padding-top: 30px;
 }
 
@@ -280,14 +301,19 @@ body {
 
 #footer2 ul li p{
 	letter-spacing: 0.005em;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 500;
+}
+
+#footer2 ul li img {
+	width: 20px;
+	height: auto;
 }
 
 #title-contact {
 	font-weight: 600;
 	font-size: 1.5rem;
-	margin: 0 0 40px 0;
+	margin-top: 86px;
 }
 
 .footer-item img {
@@ -298,7 +324,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	align-items: flex-start;
+	align-items: center;
 }
 
 #footer3 ul{
@@ -306,12 +332,17 @@ body {
 }
 
 #footer3 li {
+	font-size: 1rem;
+}
+
+#footer3 #title-contact {
+	font-weight: 600;
 	font-size: 1.5rem;
 	margin-top: 86px;
 }
 
 #footer3 li:nth-child(2) {
-	margin-top: -15px;
+	margin-top: 15px;
 }
 
 .marker {
@@ -326,81 +357,6 @@ body {
 	font-size: 1.5rem;
 }
 
-@media (max-width: 987px) {
 
-	.container{
-		padding: 0 20px;
-		overflow: hidden;
-	}
 
-	.header {
-		display: flex;
-		margin-top: 50px;
-		flex-direction: column;
-	}
 
-	.header div:nth-child(1) {
-		width: 100%;
-	}
-
-	.header div:nth-child(1) img {
-		width: 160px;
-		height: auto;
-	}
-
-    .header div:nth-child(2){
-        width: 100%;
-    }
-
-	.header div:nth-child(2) p {
-		font-size: 2.8rem;
-		padding: 40px 0px;
-	}
-
-	.header div:nth-child(2) li{
-		list-style: none;
-		border: 3px solid black;
-		border-radius: 9px;
-		padding: 7px 15px;
-		font-size: 0.7rem;
-		font-weight: 400;
-	}
-
-	.text img {
-		display: none;
-	}
-
-	.text :nth-child(2) {
-		padding: 50px 0px;    
-		letter-spacing: 0.005em;
-		font-size: 1.25rem;
-	}
-
-	.text :nth-child(3) {
-		text-align: justify;
-		font-size: 1rem;
-		padding: 30px 0px;
-		font-weight: 400;
-	}
-
-	.schedule .schedule-timeline img{
-		width: 300px;
-		padding-top: 64px;
-	}
-
-	.schedule .circle-red {
-		display: none;
-	}
-
-	.schedule .halfcircle {
-		display: none;
-	}
-
-	.schedule .star-circle {
-		display: none;
-	}
-
-	.footer {
-		margin-top: 0px;
-	}
-}
