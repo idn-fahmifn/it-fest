@@ -456,6 +456,10 @@ header {
 	background-color: black;
 }
 
+.card__item:nth-child(1) .btn_event:hover a {
+	color: white;
+}
+
 .card__item:nth-child(2) .btn_event:hover {
 	background-color: #FCA5FA;
 }
