@@ -447,6 +447,10 @@
 		font-size: 1.2rem;
 	}
 
+	.partner__img {
+		width: 30vw;
+	}
+
 	#content1 img {
 		width: 8rem;
 	}

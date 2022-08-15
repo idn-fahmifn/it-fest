@@ -94,7 +94,7 @@ header {
 	max-height: 830px;
 	max-width: 1865px;
 	position: relative;
-	margin-top: 6px;
+	margin-top: 20px;
 }
 
 .header__hero {
@@ -663,7 +663,7 @@ header {
 }
 
 .partner__img {
-	width: 276px;
+	width: 150px;
 	height: auto;
 }
 
