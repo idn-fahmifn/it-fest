@@ -136,6 +136,7 @@
 		grid-gap: 20px;
 		justify-items: start;
 		align-content: flex-start;
+		height: auto;
 	}
 
 	.footer .footer-item {
@@ -345,10 +346,6 @@
 		right: 0;
 		top: 40px;
 		width: 160px;
-	}
-
-	.footer {
-		min-height: 400px;
 	}
 
 	#footer1 {
