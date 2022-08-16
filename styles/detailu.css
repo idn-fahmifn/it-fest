@@ -124,6 +124,10 @@ body {
 .header div:nth-child(2) .daftar {
     width: 100%;
 }
+.daftar ul li a{
+	text-decoration: none;
+	color: #000;
+}
 
 .header img {
     width: 20.5vw;
@@ -227,6 +231,10 @@ body {
 .footer .footer-item {
 	width: 30%;
 	height: 100%;
+}
+.footer-item a{
+	text-decoration: none;
+	color: #000;
 }
 
 #footer1{
