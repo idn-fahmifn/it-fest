@@ -1,10 +1,10 @@
 // About Section
 
 const aboutImages = [
-	"https://cdn.tutsplus.com/cdn-cgi/image/width=600/webdesign/uploads/legacy/tuts/183_rotatedThumbnails/tut/css_object.png",
-	"https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2014/12/transform-origin-examples.png",
-	"https://www.encodedna.com/css-tutorials/tilt-or-rotate-span-a-element-using-css-transform.png",
-	"https://i.stack.imgur.com/egG1o.png"
+	"https://lh3.google.com/u/0/d/1oCOs-SFUm-pwInil8mpoZw1hjVi5yHFv=w3000-h6492-iv1",
+	"https://lh3.google.com/u/0/d/1xDwi5_bxM-f2rGM-f9mtInUfqZ8KpZWj=w3000-h6492-iv1",
+	"https://lh3.google.com/u/0/d/1dkzrV0_GVrxK1gT0P_LrBpblQSfkM5L7=w3000-h6492-iv1",
+	"https://lh3.google.com/u/0/d/1dkzrV0_GVrxK1gT0P_LrBpblQSfkM5L7=w3000-h6492-iv1"
 ]
 
 const displayImage = (n) => {

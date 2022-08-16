@@ -32,13 +32,15 @@ html::after {
 
 body {
 	font-family: "Golden Age";
-	overflow-x: hidden;
 }
 
 .container {
 	/* padding: 0 100px; */
+	width: 100vw;
 	max-width: 1500px;
 	margin: 0 auto;
+	overflow-x: hidden;
+
 }
 
 /** Navbar */
@@ -92,7 +94,7 @@ header {
 	max-height: 830px;
 	max-width: 1865px;
 	position: relative;
-	margin-top: 6px;
+	margin-top: 20px;
 }
 
 .header__hero {
@@ -454,6 +456,10 @@ header {
 	background-color: black;
 }
 
+.card__item:nth-child(1) .btn_event:hover a {
+	color: white;
+}
+
 .card__item:nth-child(2) .btn_event:hover {
 	background-color: #FCA5FA;
 }
@@ -518,10 +524,11 @@ header {
 	height: 460px; */
 	padding: 30px 40px;
 	margin-right: 10px;
-	background-image: url(../assets/icon/activity-bg.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
+	background: #F1B170;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  filter: drop-shadow(10px 10px 0px black);
 	
 }
 
@@ -646,6 +653,18 @@ header {
 
 .partner .container {
 	text-align: center;
+	margin-bottom: 40px;
+}
+
+.partner__item {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.partner__img {
+	width: 150px;
+	height: auto;
 }
 
 /* FOOTER */
@@ -663,6 +682,10 @@ header {
 .footer .footer-item {
 	width: 30%;
 	height: 100%;
+}
+.footer-item a{
+	text-decoration: none;
+	color: #000;
 }
 
 #footer1{

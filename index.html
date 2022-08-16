@@ -7,6 +7,7 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/responsive.css" />
+  <link rel="icon" type="image/png" href="./assets/icon/logo_idn.png"/>
   <title>ITFEST2022</title>
 </head>
 
@@ -14,13 +15,15 @@
   <div class="container">
     <header>
       <nav class="navbar">
-        <img src="./assets/icon/logo.png" alt="logo it-fest" class="navbar__brand" />
+        <a href="index.html">
+          <img src="./assets/icon/logo.png" alt="logo it-fest" class="navbar__brand" />
+        </a>
         <div class="navbar__list">
           <a href="#about" class="navbar__item">About</a>
           <a href="#event" class="navbar__item">Event</a>
           <a href="#timeline" class="navbar__item">Timeline</a>
           <a href="#contact" class="navbar__item">Contact</a>
-          <a href="#register" class="navbar__item item__rounded">Register</a>
+          <a href="https://linktr.ee/idn.itfest2022" target="blank" class="navbar__item item__rounded">Register</a>
         </div>
       </nav>
       
@@ -103,21 +106,21 @@
               <img src="./assets/icon/icon_laptop.png" />
               <div class="item__content">
                 <h3>Web Development</h3>
-                <div class="btn_event"><a href="detailw.html">DETAILS</a></div>
+                <div class="btn_event"><a href="./detailw.html">DETAILS</a></div>
               </div>
             </div>
             <div class="card__item">
               <img src="./assets/icon/icon_hp.png" />
               <div class="item__content">
                 <h3>UI/UX DESIGN</h3>
-                <div class="btn_event"><a href="detailu.html">DETAILS</a></div>
+                <div class="btn_event"><a href="./detailu.html">DETAILS</a></div>
               </div>
             </div>
             <div class="card__item">
               <img src="./assets/icon/icon_server.png" />
               <div class="item__content">
                 <h3>NETWORKING</h3>
-                <div class="btn_event"><a href="detailn.html">DETAILS</a></div>
+                <div class="btn_event"><a href="./detailn.html">DETAILS</a></div>
               </div>
             </div>
           </div>
@@ -126,7 +129,7 @@
 
       <section class="activity">
         <h2 class="activity__heading">we have more events too!</h2>
-        <img src="./assets/icon/star-green.png" alt="" class="activity__el-1" />
+        <!-- <img src="./assets/icon/star-green.png" alt="" class="activity__el-1" />
         <div class="activity__list">
           <div class="activity__item">
             <h3 class="item__heading">Webinar</h3>
@@ -149,10 +152,10 @@
             </div>
           </div>
         </div>
-        <img src="./assets/icon/ellipse-purple.png" alt="" class="activity__el-2" />
+        <img src="./assets/icon/ellipse-purple.png" alt="" class="activity__el-2" /> -->
       </section>
 
-      <section class="timeline">
+      <section class="timeline" id="timeline">
         <h2 class="timeline__heading">Timeline</h2>
         <img src="./assets/icon/ellipse-yellow.png" alt="" class="timeline__el-1" />
         <img src="./assets/icon/Timeline.png" alt="" class="content__image" />
@@ -164,6 +167,9 @@
         <div class="container">
           <h1>PARTNERSHIP</h1>
           <h2>SPONSOR</h2>
+        </div>
+        <div class="partner__item">
+          <img src="./assets/icon/potato_logo.png" alt="" class="partner__img">
         </div>
       </section>
     </main>
@@ -182,19 +188,19 @@
         <li id="title-contact">Call Me</li>
         <li>
           <img src="/assets/icon/ic_instagram.png" alt="">
-          <p>Instagram</p>
+          <a href="https://www.instagram.com/itfest.idn/?hl=id"><p>Instagram</p></a>
         </li>
         <li>
           <img src="/assets/icon/ic_mail.png" alt="">
-          <p>Email</p>
+          <a href="https://gmail.com"><p>Email</p></a>
         </li>
         <li>
           <img src="/assets/icon/ic_facebook.png" alt="">
-          <p>Facebook</p>
+          <a href="https://www.facebook.com/idnboardingschool"><p>Facebook</p></a>
         </li>
         <li>
           <img src="/assets/icon/ic_youtube.png" alt="">
-          <p>Youtube</p>
+          <a href="https://www.youtube.com/c/IDNTV2022"><p>Youtube</p></a>
         </li>
       </ul>
     </div>
@@ -202,6 +208,7 @@
       <ul>
         <li id="title-contact">About Us</li>
         <li>Jl. Raya Dayeuh, Sukanegara, Kec. Jonggol, Bogor, West Java 16830</li>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.9714883869988!2d107.03597311486897!3d-6.525284665607564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bc6e5be3d9bd%3A0x6b9881dabd801476!2sSMP-SMK%20IDN%20Boarding%20School!5e0!3m2!1sen!2sid!4v1660657990701!5m2!1sen!2sid" width="300" height="250" style="border:0; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </ul>
     </div>
   </footer>
