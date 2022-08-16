@@ -1,0 +1,151 @@
+@media screen and (max-width: 1080px) {
+	.navbar .navbar__list {
+		width: 45vw;
+	}
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+		padding: 
+        0px 10px;
+	}
+}
+
+@media (max-width: 987px) {
+
+	.container{
+		padding: 0 20px;
+		overflow: hidden;
+	}
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+	}
+
+	.header div:nth-child(1) {
+		width: 100%;
+	}
+
+	.header div:nth-child(1) img {
+		width: 160px;
+		height: auto;
+	}
+
+    .header div:nth-child(2){
+        width: 100%;
+    }
+
+	.header div:nth-child(2) p {
+		font-size: 2.8rem;
+		padding: 40px 0px;
+	}
+
+	.header div:nth-child(2) li{
+		list-style: none;
+		border: 3px solid black;
+		border-radius: 9px;
+		padding: 7px 15px;
+		font-size: 0.7rem;
+		font-weight: 400;
+	}
+
+	.text img {
+		display: none;
+	}
+
+	.text :nth-child(2) {
+		padding: 50px 0px;    
+		letter-spacing: 0.005em;
+		font-size: 1.25rem;
+	}
+
+	.text :nth-child(3) {
+		text-align: justify;
+		font-size: 1rem;
+		padding: 30px 0px;
+		font-weight: 400;
+	}
+
+	.schedule .schedule-timeline img{
+		width: 300px;
+		padding-top: 64px;
+	}
+
+	.schedule .circle-red {
+		display: none;
+	}
+
+	.schedule .halfcircle {
+		display: none;
+	}
+
+	.schedule .star-circle {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 625px) {
+
+    .navbar__list .navbar__item:first-child,
+	.navbar__list .navbar__item:nth-child(1),
+	.navbar__list .navbar__item:nth-child(2),
+	.navbar__list .navbar__item:nth-child(3) {
+		display: none;
+	}
+
+	.navbar .navbar__list {
+		justify-content: flex-end;
+		min-width: 120px;
+	}
+
+    .schedule .schedule-timeline {
+        padding-bottom: 100px;
+    }
+
+    .partner h1{
+        font-size: 2rem;
+    }
+
+    .partner p {
+        font-size: 0.9rem;
+    }
+
+    .partner img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 100px;
+    }
+	
+	.footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+		justify-items: start;
+		align-content: flex-start;
+	}
+
+	.footer .footer-item {
+		width: 90%;
+		margin-top: 60px;
+
+	}
+
+	#footer1 {
+		grid-column: 1 / 3;
+		flex-direction: row;		
+	}
+
+	#content1 {
+		justify-content: center;
+	}
+
+	#content1 img {
+		width: 10rem;
+	}
+
+	#footer2 {
+		padding-top: 0;
+	}
+}
