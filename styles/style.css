@@ -662,11 +662,13 @@ header {
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	align-items: center;
 }
 
 .partner__img {
 	width: 150px;
 	height: auto;
+	margin-right: 20px;
 }
 
 /* FOOTER */
