@@ -513,23 +513,25 @@ header {
 	display: grid;
 	grid-gap: 16px;
 	padding: 16px 6vw;
-	grid-template-columns: repeat(auto-fill,minmax(600px,1fr));
+	grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
 	grid-auto-flow: column;
-	grid-auto-columns: minmax(600px,1fr);
+	grid-auto-columns: minmax(450px,1fr);
 	overflow-x: auto;
 }
 
 .activity__list .activity__item {
 	/* width: 700px;
 	height: 460px; */
-	padding: 30px 40px;
 	margin-right: 10px;
-	background: #F1B170;
-  border: 3px solid #000000;
-  border-radius: 10px;
-  padding: 20px;
   filter: drop-shadow(10px 10px 0px black);
-	
+}
+
+.activity__item .item__content {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+
 }
 
 .activity__item .item__heading {
